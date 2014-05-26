@@ -1,0 +1,16 @@
+<!-- {{name}} component -->
+{{{deps_html}}}
+<template id="{{id}}">
+<style>
+{{{styles_css}}}
+</style>
+{{{markup_html}}}
+</template>
+<script>
+    (function() {
+        var component_id = '{{{id}}}';
+        var component_name = '{{{name}}}';
+        console.log('Loading component: ' + component_name);
+        {{{script_js}}}
+    })();
+</script>
