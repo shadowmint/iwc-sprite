@@ -1,11 +1,12 @@
 *.ts.js
+*.css.map
 .baseDir*
 *.ts.js
 *.js.map
 *.d.ts
 *.css
-*.js
 node_modules
 bower_components
 .sass-cache
 .idea
+defs

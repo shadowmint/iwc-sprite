@@ -1,6 +1,9 @@
 {
-  "name": "iwc-hello-world",
-  "version": "0.1.0",
+  "name": "iwc-interval-slider",
+  "version": "0.1.3",
   "dependencies": {
+    "requirejs": "~2.1.13",
+    "jquery": "<2.0.0",
+    "iwcjs": "git://github.com/shadowmint/iwc-js.git#0.1.12"
   }
 }

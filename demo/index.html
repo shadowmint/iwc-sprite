@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>Demo</title>
+</head>
+<body>
+
+<style>
+    section {
+        margin: 30px;
+    }
+    .component--sprite {
+      display: inline-block;
+    }
+    body {
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+</style>
+
+<section>
+    <h1> Scripted Example </h1>
+    <div class="component--sprite">
+      <meta data-width="50" data-height="50" data-src="simple.png" data-fx="8" data-fy="8" data-fps="30" data-loops="true"/>
+    </div>
+    <div class="component--sprite">
+      <meta data-width="50" data-height="50" data-src="simple.png" data-fx="8" data-fy="8" data-fps="30"/>
+    </div>
+</section>
+
+<section>
+    <h1> Basic example </h1>
+    <div id="foo" class="component--sprite" data-active="foo">
+      <meta data-width="32" data-height="32" data-src="simple.png" data-fx="8" data-fy="8" data-fps="30"/>
+      <meta data-state="foo" data-offset="0" data-length="8" data-loops="true"/>
+      <meta data-state="bar" data-offset="8" data-length="8" data-loops="true"/>
+      <meta data-state="foo1" data-offset="16" data-length="8" data-loops="true"/>
+      <meta data-state="foo2" data-offset="32" data-length="8" data-loops="true"/>
+      <meta data-state="foo3" data-offset="40" data-length="8" data-loops="true"/>
+    </div>
+    <p>
+      <a href="#" onclick="console.log(iwc.components.query($('#foo')).states()); return false;">console.log(states);</a>
+      <a href="#" onclick="iwc.components.query($('#foo')).state('foo'); return false;">foo</a>
+      <a href="#" onclick="iwc.components.query($('#foo')).state('bar'); return false;">bar</a>
+      <a href="#" onclick="iwc.components.query($('#foo')).state('foo1'); return false;">foo1</a>
+      <a href="#" onclick="iwc.components.query($('#foo')).state('foo2'); return false;">foo2</a>
+      <a href="#" onclick="iwc.components.query($('#foo')).state('foo3'); return false;">foo3</a>
+    </p>
+</section>
+
+<section>
+    <h1> Scripted Example With Spritesheet </h1>
+    <div id="sara" class="component--sprite" data-active="s1">
+      <meta data-width="64" data-height="70" data-src="LPC_Sara/SaraFullSheet.png" data-fx="13" data-fy="21" data-fps="10"/>
+      <meta data-state="s1" data-offset="0" data-length="7" data-loops="true"/>
+      <meta data-state="s2" data-offset="13" data-length="7" data-loops="true"/>
+      <meta data-state="s3" data-offset="26" data-length="7" data-loops="true"/>
+      <meta data-state="s4" data-offset="39" data-length="7" data-loops="true"/>
+      <meta data-state="s5" data-offset="52" data-length="8" data-loops="true"/>
+      <meta data-state="s6" data-offset="65" data-length="8" data-loops="true"/>
+      <meta data-state="s7" data-offset="78" data-length="8" data-loops="true"/>
+      <meta data-state="s8" data-offset="91" data-length="8" data-loops="true"/>
+      <meta data-state="s9" data-offset="104" data-length="9" data-loops="true"/>
+      <meta data-state="s10" data-offset="117" data-length="9" data-loops="true"/>
+      <meta data-state="s11" data-offset="130" data-length="9" data-loops="true"/>
+      <meta data-state="s12" data-offset="143" data-length="9" data-loops="true"/>
+      <meta data-state="s13" data-offset="156" data-length="6" data-loops="true"/>
+      <meta data-state="s14" data-offset="169" data-length="6" data-loops="true"/>
+      <meta data-state="s15" data-offset="182" data-length="6" data-loops="true"/>
+      <meta data-state="s16" data-offset="195" data-length="6" data-loops="true"/>
+      <meta data-state="s17" data-offset="208" data-length="13" data-loops="true"/>
+      <meta data-state="s18" data-offset="221" data-length="13" data-loops="true"/>
+      <meta data-state="s19" data-offset="234" data-length="13" data-loops="true"/>
+      <meta data-state="s20" data-offset="247" data-length="13" data-loops="true"/>
+      <meta data-state="s21" data-offset="260" data-length="6" data-loops="true"/>
+    </div>
+    <a href="#" onclick="iwc.components.query($('#sara')).debug(); return false;">debug</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s1'); return false;">1</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s2'); return false;">2</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s3'); return false;">3</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s4'); return false;">4</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s5'); return false;">5</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s6'); return false;">6</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s7'); return false;">7</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s8'); return false;">8</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s9'); return false;">9</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s10'); return false;">10</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s11'); return false;">11</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s12'); return false;">12</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s13'); return false;">13</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s14'); return false;">14</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s15'); return false;">15</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s16'); return false;">16</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s17'); return false;">17</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s18'); return false;">18</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s19'); return false;">19</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s20'); return false;">20</a>
+    <a href="#" onclick="iwc.components.query($('#sara')).state('s21'); return false;">21</a>
+</section>
+
+<section>
+</section>
+<script data-main="app" src="/bower_components/requirejs/require.js"></script>
+</body>
+</hhtml>
