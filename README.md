@@ -7,11 +7,17 @@ A simple sprite animation that renders to a canvas tag
 ## Usage
 
     <div id="foo" class="component--sprite" data-active="foo">
-      <meta data-width="32" data-height="32" data-src="simple.png" data-fx="8" data-fy="8" data-fps="30"/>
+
+      <!-- Number of frames in the sprite sheet -->
+      <meta data-fx="8" data-fy="8" data-fps="30"/>
+
+      <!-- Size of teh canvas and source image to use -->
+      <meta data-width="32" data-height="32" data-src="simple.png"/>
+
+      <!-- Individual sets of sprites as named states -->
       <meta data-state="foo" data-offset="0" data-length="8" data-loops="true"/>
-      <meta data-state="bar" data-offset="8" data-length="8" data-loops="true"/>
+      <meta data-state="bar" data-offset="8" data-length="8">
     </div>
-    <p>
 
     ...
 
